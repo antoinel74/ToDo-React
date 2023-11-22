@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 
-let ToDoList = (props) => {
+let ToDoList = () => {
+  const initialTodos = [
+    { task: "Learn React", completed: false },
+    { task: "Be Awesome", completed: true },
+    { task: "Try again", completed: true },
+  ];
+
+  const [todos, setTodos] = useState(initialTodos);
+
+  const checkboxChange = (index) => {
+    const updatedTodos = todos.map((todo, i) =>
+      index === i ? { ...todo, completed: !todo.completed } : todo
+    );
+    setTodos(updatedTodos);
+  };
+
   return (
-    <div>
-      <h2>Todos</h2>
-      <ul>
-        <li>
-          <input type="checkbox" name="todolist" />
-          Learn React
+    <ul>
+      {todos.map((todo, index) => (
+        <li key={index}>
+          <input
+            type="checkbox"
+            checked={todo.completed}
+            onChange={() => checkboxChange(index)}
+          />{" "}
+          {todo.task}
         </li>
-        <li>
-          <input type="checkbox" name="todolist" />
-          Be Awesome !
-        </li>
-      </ul>
-    </div>
+      ))}
+    </ul>
   );
 };
 
