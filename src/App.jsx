@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import InputField from "./components/Form";
 import ToDoList from "./components/todoList";
 
+const LSKEY = "MyTodoApp";
+
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const storedTodos = JSON.parse(
+      window.localStorage.getItem(LSKEY + ".todos")
+    );
+    return storedTodos || [];
+  });
+
+  useEffect(() => {
+    window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
+    console.log("Todos to be stored:", todos);
+  }, [todos]);
 
   const addTask = (newTask) => {
     setTodos((prevTodos) => [

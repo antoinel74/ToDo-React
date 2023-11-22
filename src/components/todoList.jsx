@@ -10,7 +10,7 @@ let ToDoList = ({ todos, checkboxChange }) => {
             checked={todo.completed}
             onChange={() => checkboxChange(index)}
           />{" "}
-          {todo.task}
+          <span>{todo.task}</span>
         </li>
       ))}
     </ul>
