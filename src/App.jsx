@@ -46,7 +46,10 @@ function App() {
         <ToDoList todos={todos} checkboxChange={checkboxChange} />
       </div>
       <div>
-        <button onClick={deleteCompletedTasks}>Delete Completed Tasks</button>
+        <DeleteBtn
+          onClick={deleteCompletedTasks}
+          text="Delete Completed Tasks"
+        />
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 
-const DeleteBtn = () => {
-  return <button>Delete completed tasks</button>;
+const DeleteBtn = ({ onClick, text }) => {
+  return <button onClick={onClick}>{text}</button>;
 };
 
 export default DeleteBtn;
