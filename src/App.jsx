@@ -3,6 +3,7 @@ import "./App.css";
 import InputField from "./components/Form";
 import ToDoList from "./components/TodoList";
 import DeleteBtn from "./components/DeleteBtn";
+import Navbar from "./components/Nav";
 import { Route, Routes } from "react-router-dom";
 
 const LSKEY = "MyTodoApp";
