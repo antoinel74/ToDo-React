@@ -1,16 +1,20 @@
 import React from "react";
 
 let ToDoList = ({ todos, checkboxChange }) => {
+  const taskStyle = {
+    textDecoration: "line-through",
+  };
+
   return (
-    <ul>
+    <ul className="tasks">
       {todos.map((todo, index) => (
-        <li key={index}>
+        <li className="task" key={index}>
           <input
             type="checkbox"
             checked={todo.completed}
             onChange={() => checkboxChange(index)}
           />{" "}
-          <span>{todo.task}</span>
+          <span style={todo.completed ? taskStyle : null}>{todo.task}</span>
         </li>
       ))}
     </ul>

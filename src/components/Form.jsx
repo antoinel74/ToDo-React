@@ -16,11 +16,11 @@ const InputField = ({ addTask }) => {
         ref={inputRef}
         type="text"
         placeholder="Type smthg to do"
-        name="input"
+        className="input"
         id="input"
       ></input>
-      <button class="addBtn" type="button" onClick={clickHandler}>
-        Add
+      <button className="addBtn" type="button" onClick={clickHandler}>
+        +
       </button>
     </form>
   );

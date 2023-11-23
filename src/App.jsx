@@ -38,18 +38,31 @@ function App() {
     setTodos(incompleteTasks);
   };
 
+  const tasksCounter = todos.length;
+  const completedTasksCounter = todos.filter((todo) => todo.completed).length;
+
   return (
     <>
-      <h1>To Do List</h1>
-      <div>
-        <InputField addTask={addTask} />
+      <div className="app">
+        <h1>
+          to<span>do</span>
+        </h1>
+        <div className="controls">
+          <InputField addTask={addTask} />
+          <DeleteBtn
+            onClick={deleteCompletedTasks}
+            text="Delete Completed Tasks"
+          />
+        </div>
+        <div className="counters">
+          <p className="counter">
+            Tasks <span>{tasksCounter}</span>
+          </p>
+          <p className="counter">
+            Completed <span>{completedTasksCounter}</span>
+          </p>
+        </div>
         <ToDoList todos={todos} checkboxChange={checkboxChange} />
-      </div>
-      <div>
-        <DeleteBtn
-          onClick={deleteCompletedTasks}
-          text="Delete Completed Tasks"
-        />
       </div>
     </>
   );
