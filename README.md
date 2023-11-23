@@ -1,8 +1,26 @@
-# React Intro
+# React / ToDo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About the project ☕
 
-Currently, two official plugins are available:
+This project is part of the BeCode FrontEnd Trail and consists in a ToDoList App built in `React`.
+[Check it out !](xxxxxxx)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Objectives
+
+- Think in <b>React</b> !
+- Be able to use basic <b>hooks</b> for managing <b>state and reactivity</b>
+- Organize your app in <b>components</b>
+
+### Built with
+
+![React](https://shields.io/badge/react-black?logo=react&style=for-the-badge)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![CSS](https://img.shields.io/badge/_-CSS-563D7C.svg?style=for-the-badge)
+
+## Preview
+
+![UI_preview](xxxxxx)
+
+## Contact
+
+Antoine LANSMAN - antoine.lansman@gmail.com
