@@ -16,7 +16,7 @@ function App() {
 
   useEffect(() => {
     window.localStorage.setItem(LSKEY + ".todos", JSON.stringify(todos));
-    console.log("Todos to be stored:", todos);
+    console.log("Todos to be stored:", todos); // TEST //
   }, [todos]);
 
   const addTask = (newTask) => {
