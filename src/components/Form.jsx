@@ -19,7 +19,7 @@ const InputField = ({ addTask }) => {
         name="input"
         id="input"
       ></input>
-      <button type="button" onClick={clickHandler}>
+      <button class="addBtn" type="button" onClick={clickHandler}>
         Add
       </button>
     </form>

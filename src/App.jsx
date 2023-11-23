@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import InputField from "./components/Form";
 import ToDoList from "./components/todoList";
+import DeleteBtn from "./components/DeleteBtn";
 
 const LSKEY = "MyTodoApp";
 
@@ -32,12 +33,20 @@ function App() {
     setTodos(updatedTodos);
   };
 
+  const deleteCompletedTasks = () => {
+    const incompleteTasks = todos.filter((todo) => !todo.completed);
+    setTodos(incompleteTasks);
+  };
+
   return (
     <>
       <h1>To Do List</h1>
       <div>
         <InputField addTask={addTask} />
         <ToDoList todos={todos} checkboxChange={checkboxChange} />
+      </div>
+      <div>
+        <button onClick={deleteCompletedTasks}>Delete Completed Tasks</button>
       </div>
     </>
   );
