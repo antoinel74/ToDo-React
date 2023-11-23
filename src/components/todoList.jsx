@@ -4,6 +4,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 let ToDoList = ({ todos, checkboxChange }) => {
   const taskStyle = {
     textDecoration: "line-through",
+    opacity: 0.4,
   };
 
   const nodeRef = useRef(null);

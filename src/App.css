@@ -31,14 +31,16 @@ input {
   font-weight: 600;
 }
 
-.deleteBtn {
-  padding: 0.2em;
-  background-color: rgb(118, 13, 13);
-}
-
 .controls {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 468px) {
+  .controls {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 .counters {
