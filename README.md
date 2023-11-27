@@ -9,8 +9,7 @@ This project is part of the BeCode FrontEnd Trail and consists in a ToDoList App
 
 - Think in <b>React</b> !
 - Be able to use basic <b>hooks</b> for managing <b>state and reactivity</b>
-- Organize your app in <b>components</b>
-- Light/Dark mode based on user's OS preferences
+- Organize your app in <b>components</b> and use <b>routing</b>.
 
 ### Built with
 
