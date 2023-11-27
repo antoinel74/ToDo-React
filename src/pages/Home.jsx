@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import InputField from "../components/Form";
-import ToDoList from "../components/Todolist";
+import Todolist from "../components/Todolist";
 import DeleteBtn from "../components/DeleteBtn";
 
 const LSKEY = "MyTodoApp";
@@ -64,7 +64,7 @@ function Home() {
               Completed <span>{completedTasksCounter}</span>
             </p>
           </div>
-          <ToDoList todos={todos} checkboxChange={checkboxChange} />
+          <Todolist todos={todos} checkboxChange={checkboxChange} />
         </div>
         <DeleteBtn
           onClick={deleteCompletedTasks}
