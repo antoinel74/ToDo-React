@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Todolist from "./pages/Home";
+import Home from "./pages/Home";
 import Calendar from "./pages/Calendar";
 import Navbar from "./components/Nav";
 import { Route, Routes } from "react-router-dom";
@@ -11,7 +11,7 @@ function App() {
       <div className="app">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Todolist />} />
+          <Route path="/" element={<Home />} />
           <Route path="/calendar" element={<Calendar />} />
         </Routes>
       </div>

@@ -5,7 +5,7 @@ import DeleteBtn from "../components/DeleteBtn";
 
 const LSKEY = "MyTodoApp";
 
-function Todolist() {
+function Home() {
   const [todos, setTodos] = useState(() => {
     const storedTodos = JSON.parse(
       window.localStorage.getItem(LSKEY + ".todos")
@@ -75,4 +75,4 @@ function Todolist() {
   );
 }
 
-export default Todolist;
+export default Home;
