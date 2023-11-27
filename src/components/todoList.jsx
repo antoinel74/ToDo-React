@@ -20,12 +20,19 @@ let ToDoList = ({ todos, checkboxChange }) => {
             nodeRef={nodeRef}
           >
             <li className="task fade" key={index} ref={nodeRef}>
-              <input
-                type="checkbox"
-                checked={todo.completed}
-                onChange={() => checkboxChange(index)}
-              />{" "}
-              <span style={todo.completed ? taskStyle : null}>{todo.task}</span>
+              <div>
+                <input
+                  type="checkbox"
+                  checked={todo.completed}
+                  onChange={() => checkboxChange(index)}
+                />{" "}
+                <span style={todo.completed ? taskStyle : null}>
+                  {todo.task}
+                </span>
+              </div>
+              <span style={todo.completed ? taskStyle : null}>
+                {todo.dateTo}
+              </span>
             </li>
           </CSSTransition>
         ))}
