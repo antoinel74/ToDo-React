@@ -3,7 +3,7 @@
 ## About the project ☕
 
 This project is part of the BeCode FrontEnd Trail and consists in a ToDoList App built in `React`.
-[Check it out !](xxxxxxx)
+[Check it out !](https://react-todolist-ivory.vercel.app/)
 
 ### Objectives
 
