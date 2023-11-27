@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import InputField from "../components/Form";
-import ToDoList from "../components/ToDoList";
+import ToDoList from "../components/Todolist";
 import DeleteBtn from "../components/DeleteBtn";
 
 const LSKEY = "MyTodoApp";
