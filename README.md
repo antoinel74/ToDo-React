@@ -19,7 +19,7 @@ This project is part of the BeCode FrontEnd Trail and consists in a ToDoList App
 
 ## Preview
 
-![UI_preview](/public/preview.png);
+![UI_preview](/public/preview.png)
 
 ## Contact
 
