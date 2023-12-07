@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import { convertDateFormat } from "../utils/convertDate";
 
 let Todolist = ({ todos, checkboxChange }) => {
   const taskStyle = {
@@ -31,7 +32,7 @@ let Todolist = ({ todos, checkboxChange }) => {
                 </span>
               </div>
               <span style={todo.completed ? taskStyle : null}>
-                {todo.dateTo}
+                {convertDateFormat(todo.dateTo)}
               </span>
             </li>
           </CSSTransition>
